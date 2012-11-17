@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../quicksand/jquery.quicksand.js"></script>
+    <script src="jquery.quicksandfilter.js"></script>
+    <style>
+      ul {
+        width:260px;
+      }
+      li {
+        display:inline-block;
+        width:60px;
+        height:60px;
+        color: white;
+      }
+      .a {
+        background-color: #8833CC;
+      }
+      .b {
+        background-color: #33CC88;
+      }
+      .c {
+        background-color: #CC8833;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="$('#container').quicksandfilter('')">All</button>
+    <button onclick="$('#container').quicksandfilter('.a')">A</button>
+    <button onclick="$('#container').quicksandfilter('.b')">B</button>
+    <button onclick="$('#container').quicksandfilter('.c')">C</button>
+    <button onclick="$('#container').quicksandfilter('.odd')">Odd</button>
+    <button onclick="$('#container').quicksandfilter('.even')">Even</button>
+    <ul id="container">
+      <li class="a odd">a1</li>
+      <li class="b even">b2</li>
+      <li class="c odd">c3</li>
+      <li class="a even">a4</li>
+      <li class="b odd">b5</li>
+      <li class="c even">c6</li>
+      <li class="a odd">a7</li>
+      <li class="b even">b8</li>
+      <li class="c odd">c9</li>
+      <li class="a even">a10</li>
+    </ul>
+  </body>
+</html>

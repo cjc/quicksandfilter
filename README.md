@@ -3,6 +3,8 @@ quicksandfilter
 
 A very simple wrapper for [quicksand](https://github.com/razorjack/quicksand) implementing basic css selector filtering
 
+(Quicksand is the great work by razorjack, but if you're using it with inline or inline-block elements I suggest [this](https://github.com/cjc/quicksand) fork which is compatible with inline elements that have separating whitespace)
+
 ```
     <button onclick="$('#container').quicksandfilter('')">All</button>
     <button onclick="$('#container').quicksandfilter('.a')">A</button>
